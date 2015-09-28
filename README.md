@@ -6,7 +6,7 @@ You will need an AWS account with Cloudwatch alarms set to fire SNS alerts on hi
 
 ### What problem does this solve?  
 
-You need to scale worker instances running in DigitalOcean based on counts of messages inside your AWS kit. That's odd you might say, why not have workers simply running in AWS and take advantage of various autoscaling AWS goodies. Um, soemtimes workers are doing things you dont necesssarily want associated with your AWS account. * cough * .... like maybe scraping the web or hacking re-captcha. Hypothetically, of course.
+You need to scale worker instances running in DigitalOcean based on counts of messages inside your AWS kit. That's odd you might say, why not have workers simply running in AWS and take advantage of various autoscaling AWS goodies. Um, sometimes workers are doing things you dont necesssarily want associated with your AWS account. * cough * .... like maybe scraping the web or hacking re-captcha. Hypothetically, of course.
 
 ### Install  
 ```$>npm install```
@@ -47,7 +47,7 @@ config = {
 
 ### Deploy
 
-The deploy directory contains shell scripts to create and upload a Lambda function as well as set policy on it. AWS cli installation and properly configured aws credentials on a must for this shell to work.  
+The deploy directory contains shell scripts to create and upload a Lambda function as well as set policy on it. AWS cli installation and properly configured aws credentials are a must for this shell to work.  
 
 This deploy shell will NOT setup SQS/SNS/Cloudwatch. Nor will it configure the Lambda to listen for SNS events. At the time I created this repo the aws-cli could not
 set event triggers on Lambdas. You will have to do that via the AWS mgmt console.
