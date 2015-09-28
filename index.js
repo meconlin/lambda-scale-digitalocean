@@ -14,11 +14,6 @@ var _run = function(event, context) {
   var message = event.Records[0].Sns.Message;
   message = JSON.parse(message);
   console.log("_run : message : ", message);
-  console.log("_run : message : ", message.AlarmName);
-  console.log("_run : choices : " + config.highAlarmName + " : " + config.lowAlarmName);
-
-  console.log("_run : choices : ",  config.lowAlarmName === message.AlarmName);
-  console.log("_run : choices : ",  config.highAlarmName === message.AlarmName);
 
   if( message.AlarmName === config.highAlarmName ) {
     //SCALE UP
