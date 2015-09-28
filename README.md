@@ -59,3 +59,5 @@ set event triggers on Lambdas. You will have to do that via the AWS mgmt console
 [AWS SNS Topics](https://aws.amazon.com/documentation/sns/)  
 [DigitalOcean](https://www.digitalocean.com)  
 [DigitalOcean API](https://www.digitalocean.com/features/api/)  
+[DigitalOcean Wrapper for node](https://github.com/matt-major/do-wrapper)
+[AWS SDK for node](https://github.com/aws/aws-sdk-js)  
