@@ -1,0 +1,16 @@
+{
+  "name": "lambda-scale-digitalocean",
+  "version": "1.0.0",
+  "description": "scale digitalocean instances",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "meconlin",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.0",
+    "bluebird": "^2.10.1",
+    "do-wrapper": "^2.2.0"
+  }
+}
